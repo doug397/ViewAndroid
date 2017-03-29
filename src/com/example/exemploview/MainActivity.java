@@ -18,6 +18,17 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.scrool_view);
 		
+		
+		
+		LinearLayout liner=  (LinearLayout) findViewById(R.id.linerlayout);
+		
+		
+		for(int i=0;i<50;i++){
+			TextView tv= new TextView(this);
+			tv.setText("Texto Exemplo"+(i+1));
+			liner.addView(tv);
+		}
+		
 	
 		
 	}
